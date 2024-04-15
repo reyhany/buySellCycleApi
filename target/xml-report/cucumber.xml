@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.185">
+    <testcase classname="As an administrator, I want to access the details of the Refund&amp;Reason with the specified ID number via the" name="When a GET request body containing invalid authorization information and the refund&amp;reason ID to access" time="0.325">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[* The api user constructs the base url with the "invalid" token.............passed
+* The api user sets "api/refundReasonDetails" path parameters...............passed
+* The api user prepares a GET request containing the refund reason 1 for which details are to be accessed, to send to the api refundReasonDetails endpoint..passed
+* The API user records the response from the api refundReasonDetails endpoint, confirming that the status code is '401' and the reason phrase is Unauthorized..undefined
+* Api kullanicisi api refundReasonDetails endpointinden donen responsei kaydeder, status code '401' ve reason phrase Unauthorized oldugunu dogrular.skipped
+]]>
+        </failure>
+    </testcase>
+</testsuite>
