@@ -39,6 +39,7 @@ Feature: As an administrator, I want to access the Refund & Reason List through 
     * The api user constructs the base url with the "invalid" token.
     # APi kullanicisi "invalid" token ile base urli olusturur
     * The api user sets "api/refundReasonList" path parameters
+    # APi kullanicisi "api/refundReasonList" path parametrelerini olusturur
     * The API user records the response from the api refundReasonList endpoint, confirming that the status code is '401' and the reason phrase is Unauthorized.
     # Api kullanicisi api refundReasonList endpointinden donen responsei kaydeder status code '401' ve reason phrase Unauthorized oldugunu dogrular
 
