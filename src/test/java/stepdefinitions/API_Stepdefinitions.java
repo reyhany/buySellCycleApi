@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import com.github.javafaker.Faker;
 import config_Requirements.ConfigReader;
 import hooks.HooksAPI;
 import io.cucumber.java.en.Given;
@@ -23,6 +24,9 @@ public class API_Stepdefinitions {
     JsonPath jsonPath;
     HashMap<String, Object> reqBody;
     Pojo requestPojo;
+    String email;
+
+    Faker faker = new Faker();
 
     @Given("The api user sets {string} path parameters")
     public void the_api_user_sets_path_parameters(String rawPaths) {
@@ -107,6 +111,10 @@ public class API_Stepdefinitions {
     public void the_api_user_prepares_a_get_request_containing_the_refund_reason_for_which_details_are_to_be_accessed_to_send_to_the_api_refund_reason_details_endpoint(int id) {
         requestBody = new JSONObject();
         requestBody.put("id", id);
+        /*
+        email = faker.internet().emailAddress();
+        requestBody.put("email", email);
+         */
     }
 
     @Given("The api user sends a GET request and saves the response returned from the api refundReasonDetails endpoint.")
